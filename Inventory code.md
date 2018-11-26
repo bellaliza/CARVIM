@@ -1,0 +1,731 @@
+
+POST / api / inventory  "Creates a new inventory document."
+
+Name=inventory     Description = The inventory document to store.
+
+Example Value |  Model  (Below)
+*****************************************************
+{
+  "vehicle": {
+    "lockedFields": [
+      {
+        "path": "string",
+        "value": "Unlocked"
+      }
+    ],
+    "bodyDescription": {
+      "bedLength": "string",
+      "bedStyle": "string",
+      "boxLength": {
+        "value": "string",
+        "unitOfMeasure": "unknown"
+      },
+      "boxStyle": "string",
+      "cabStyle": "string",
+      "cabType": "string",
+      "consumerBodyType": "string",
+      "marketClass": "string",
+      "marketingBodyStyle": "string",
+      "passengerDoors": 0,
+      "primaryBodyStyle": "string",
+      "rearWheelConfiguration": "string",
+      "roofStyle": "string",
+      "secondaryBodyStyles": [
+        "string"
+      ],
+      "segment": "string",
+      "sideStyle": "string",
+      "vehicleType": "string"
+    },
+    "catalogVehicles": [
+      {
+        "catalogVehicleId": 0,
+        "href": "string",
+        "id": 0,
+        "standardVehicleConfigurationId": 0
+      }
+    ],
+    "chromeStyleIDs": [
+      "string"
+    ],
+    "consumerInformation": [
+      {
+        "content": "string",
+        "type": "string"
+      }
+    ],
+    "colors": {
+      "exterior": [
+        {
+          "genericName": "string",
+          "isPrimary": true,
+          "name": "string",
+          "normalizedName": "string",
+          "oemName": "string",
+          "oemOptionCode": "string",
+          "optionCode": "string",
+          "rgbHex": "string"
+        }
+      ],
+      "interior": [
+        {
+          "materialType": [
+            [
+              "string"
+            ]
+          ],
+          "materialTypes": [
+            "string"
+          ],
+          "name": "string",
+          "normalizedName": "string",
+          "oemName": "string",
+          "oemOptionCode": "string",
+          "optionCode": "string",
+          "rgbHex": "string"
+        }
+      ]
+    },
+    "country": {
+      "code": "string",
+      "name": "string"
+    },
+    "countryOfOrigin": {
+      "code": "string",
+      "name": "string"
+    },
+    "destination": {
+      "amount": "string",
+      "unitOfMeasure": "unknown"
+    },
+    "fuelEconomy": [
+      {
+        "city": {
+          "value": "string",
+          "unitOfMeasure": "string"
+        },
+        "combined": {
+          "value": "string",
+          "unitOfMeasure": "string"
+        },
+        "condition": "string",
+        "highway": {
+          "value": "string",
+          "unitOfMeasure": "string"
+        }
+      }
+    ],
+    "gpsLocation": "string",
+    "gvwr": "string",
+    "installedEquipment": [
+      {
+        "alternateOptionCode": "string",
+        "availability": "string",
+        "configurationLogic": {
+          "cannotBeCombinedWith": [
+            {
+              "equipmentId": "string"
+            }
+          ],
+          "includesOne": [
+            {
+              "equipmentId": "string"
+            }
+          ],
+          "includesAll": [
+            {
+              "equipmentId": "string"
+            }
+          ],
+          "requiresOne": [
+            {
+              "equipmentId": "string"
+            }
+          ],
+          "requiresAll": [
+            {
+              "equipmentId": "string"
+            }
+          ]
+        },
+        "description": "string",
+        "equipmentCategories": [
+          {
+            "name": "string"
+          }
+        ],
+        "categories": [
+          {
+            "header": "string",
+            "subheader": "string",
+            "tag": "string"
+          }
+        ],
+        "equipmentId": "string",
+        "extendedDescription": "string",
+        "oemOptionCode": "string",
+        "pricing": {
+          "invoice": {
+            "unitOfMeasure": "string",
+            "amount": "string"
+          },
+          "msrp": {
+            "unitOfMeasure": "string",
+            "amount": "string"
+          },
+          "conditionalPricing": [
+            {
+              "condition": "string",
+              "invoice": {
+                "unitOfMeasure": "string",
+                "amount": "string"
+              },
+              "msrp": {
+                "unitOfMeasure": "string",
+                "amount": "string"
+              }
+            }
+          ]
+        },
+        "primaryDescription": "string",
+        "secondaryOemOptionCode": "string",
+        "secondaryOptionCode": "string",
+        "tags": [
+          "string"
+        ]
+      }
+    ],
+    "customEquipment": [
+      {
+        "alternateOptionCode": "string",
+        "availability": "string",
+        "configurationLogic": {
+          "cannotBeCombinedWith": [
+            {
+              "equipmentId": "string"
+            }
+          ],
+          "includesOne": [
+            {
+              "equipmentId": "string"
+            }
+          ],
+          "includesAll": [
+            {
+              "equipmentId": "string"
+            }
+          ],
+          "requiresOne": [
+            {
+              "equipmentId": "string"
+            }
+          ],
+          "requiresAll": [
+            {
+              "equipmentId": "string"
+            }
+          ]
+        },
+        "description": "string",
+        "equipmentCategories": [
+          {
+            "name": "string"
+          }
+        ],
+        "categories": [
+          {
+            "header": "string",
+            "subheader": "string",
+            "tag": "string"
+          }
+        ],
+        "equipmentId": "string",
+        "extendedDescription": "string",
+        "oemOptionCode": "string",
+        "pricing": {
+          "invoice": {
+            "unitOfMeasure": "string",
+            "amount": "string"
+          },
+          "msrp": {
+            "unitOfMeasure": "string",
+            "amount": "string"
+          },
+          "conditionalPricing": [
+            {
+              "condition": "string",
+              "invoice": {
+                "unitOfMeasure": "string",
+                "amount": "string"
+              },
+              "msrp": {
+                "unitOfMeasure": "string",
+                "amount": "string"
+              }
+            }
+          ]
+        },
+        "primaryDescription": "string",
+        "secondaryOemOptionCode": "string",
+        "secondaryOptionCode": "string",
+        "tags": [
+          "string"
+        ]
+      }
+    ],
+    "invoice": {
+      "unitOfMeasure": "string",
+      "amount": "string"
+    },
+    "isValidVin": true,
+    "isVinDecoded": true,
+    "make": "string",
+    "manufacturer": "string",
+    "marketingName": "string",
+    "midModelYear": 0,
+    "model": {
+      "availability": "string",
+      "marketingName": "string",
+      "modelCode": "string",
+      "modelGroup": "string",
+      "name": "string",
+      "normalizedName": "string",
+      "region": "string"
+    },
+    "msrp": {
+      "unitOfMeasure": "string",
+      "amount": "string"
+    },
+    "name": "string",
+    "optionalEquipment": [
+      {
+        "availability": "string",
+        "configurationLogic": {
+          "cannotBeCombinedWith": [
+            {
+              "equipmentId": "string"
+            }
+          ],
+          "includesOne": [
+            {
+              "equipmentId": "string"
+            }
+          ],
+          "includesAll": [
+            {
+              "equipmentId": "string"
+            }
+          ],
+          "requiresOne": [
+            {
+              "equipmentId": "string"
+            }
+          ],
+          "requiresAll": [
+            {
+              "equipmentId": "string"
+            }
+          ]
+        },
+        "description": "string",
+        "equipmentCategories": [
+          {
+            "name": "string"
+          }
+        ],
+        "equipmentId": "string",
+        "extendedDescription": "string",
+        "optionCode": "string",
+        "pricing": {
+          "invoice": {
+            "unitOfMeasure": "string",
+            "amount": "string"
+          },
+          "msrp": {
+            "unitOfMeasure": "string",
+            "amount": "string"
+          },
+          "conditionalPricing": [
+            {
+              "condition": "string",
+              "invoice": {
+                "unitOfMeasure": "string",
+                "amount": "string"
+              },
+              "msrp": {
+                "unitOfMeasure": "string",
+                "amount": "string"
+              }
+            }
+          ]
+        },
+        "primaryDescription": "string",
+        "secondaryOptionCode": "string"
+      }
+    ],
+    "powertrain": {
+      "drivetrain": {
+        "description": "string",
+        "type": "string",
+        "wheelCount": 0
+      },
+      "engine": {
+        "aspiration": "string",
+        "blockType": "string",
+        "camshaft": "string",
+        "cylinderCount": 0,
+        "displacement": {
+          "amount": "string",
+          "unitOfMeasure": "string",
+          "value": "string"
+        },
+        "extendedDescription": "string",
+        "fuelIntake": "string",
+        "fuelType": "string",
+        "manufacturer": "string",
+        "oemOptionCode": "string",
+        "optionCode": "string",
+        "primaryDescription": "string",
+        "valveCount": 0
+      },
+      "transmission": {
+        "description": "string",
+        "extendedDescription": "string",
+        "gearCount": 0,
+        "manufacturer": "string",
+        "marketName": "string",
+        "optionCode": "string",
+        "oemOptionCode": "string",
+        "primaryDescription": "string",
+        "type": "string"
+      }
+    },
+    "region": "string",
+    "serviceDate": "string",
+    "standardVehicleConfigurationId": 0,
+    "technicalSpecifications": {
+      "fuelEconomy": {
+        "city": {
+          "value": "string",
+          "unitOfMeasure": "unknown"
+        },
+        "cityEquivalent": "string",
+        "combined": {
+          "value": "string",
+          "unitOfMeasure": "unknown"
+        },
+        "combinedEquivalent": "string",
+        "highway": {
+          "value": "string",
+          "unitOfMeasure": "unknown"
+        },
+        "highwayEquivalent": "string"
+      },
+      "weightRatings": {
+        "frontAxle": {
+          "value": "string",
+          "unitOfMeasure": "unknown"
+        },
+        "grossCombinedWeightRating": {
+          "value": "string",
+          "unitOfMeasure": "unknown"
+        },
+        "grossVehicleWeightRating": {
+          "value": "string",
+          "unitOfMeasure": "unknown"
+        },
+        "rearAxle": {
+          "value": "string",
+          "unitOfMeasure": "unknown"
+        },
+        "wheelbases": {
+          "unitOfMeasure": "string",
+          "value": 0
+        }
+      }
+    },
+    "title": "string",
+    "trim": {
+      "marketingName": "string",
+      "name": "string",
+      "normalizedName": "string",
+      "subTrim": "string"
+    },
+    "trueBasePrice": true,
+    "vehicleAvailability": "string",
+    "vehicleStatus": "string",
+    "vin": "string",
+    "warranty": {
+      "deductible": 0,
+      "miles": 0,
+      "months": 0,
+      "startDate": "2018-11-06T17:48:10.916Z"
+    },
+    "wheelbases": [
+      {
+        "wheelbase": {
+          "unitOfMeasure": "string",
+          "value": "string"
+        },
+        "condition": "string"
+      }
+    ],
+    "year": "string"
+  },
+  "inventoryDetail": {
+    "doorKeyCode": "string",
+    "engineKeyCode": "string",
+    "exceedsOdometerCapacity": true,
+    "fobKeyCode": "string",
+    "trunkKeyCode": "string",
+    "radioKeyCode": "string",
+    "wheelKeyCode": "string",
+    "inspectionMonth": 0,
+    "isAccountingLocked": true,
+    "isDealerCertified": true,
+    "isDemo": true,
+    "isFleet": true,
+    "isOEMCertified": true,
+    "isRental": true,
+    "isValidVin": true,
+    "isVinDecoded": true,
+    "licensePlateNumber": "string",
+    "lotLocation": "string",
+    "merchandisingStatus": "string",
+    "oemCertificationInspectionNumber": "string",
+    "oemCertificationProgram": "string",
+    "tenantId": "string",
+    "vin": "string",
+    "stockNumber": "string",
+    "sourceInstalledStandardEquipment": "string",
+    "sourceInstalledOptionalEquipment": "string",
+    "stockingDate": "2018-11-06T17:48:10.917Z",
+    "serviceDate": "2018-11-06T17:48:10.917Z",
+    "certification": "string",
+    "locationStatus": "string",
+    "odometer": {
+      "exceedsOdometerCapacity": true,
+      "unitOfMeasure": "string",
+      "value": 0
+    },
+    "licensePlate": "string",
+    "type": "string",
+    "disposition": "string",
+    "tireBrand": "string",
+    "wheelType": "string",
+    "sourceEquipment": "string",
+    "sourceOptionFactoryCodes": "string",
+    "sourcePackageFactoryCodes": "string",
+    "websiteVDPUrl": "string",
+    "lockedFields": [
+      {
+        "path": "string",
+        "value": "Unlocked"
+      }
+    ],
+    "inspectionDate": "2018-11-06T17:48:10.917Z",
+    "custom": {}
+  },
+  "prices": {
+    "msrp": {
+      "value": 0,
+      "currency": "string"
+    },
+    "listPrice": {
+      "value": 0,
+      "currency": "string"
+    },
+    "invoicePrice": {
+      "value": 0,
+      "currency": "string"
+    },
+    "advertisedPrice": {
+      "value": 0,
+      "currency": "string"
+    },
+    "addedAccessoriesPrice": {
+      "value": 0,
+      "currency": "string"
+    },
+    "supplierPrice": {
+      "value": 0,
+      "currency": "string"
+    },
+    "employeePrice": {
+      "value": 0,
+      "currency": "string"
+    },
+    "fairMarketValue": {
+      "value": 0,
+      "currency": "string"
+    },
+    "appraisedValue": {
+      "value": 0,
+      "currency": "string"
+    },
+    "dealerDiscounts": {
+      "value": 0,
+      "currency": "string"
+    },
+    "appliedIncentives": {
+      "value": 0,
+      "currency": "string"
+    },
+    "totalCost": {
+      "value": 0,
+      "currency": "string"
+    },
+    "originalCost": {
+      "value": 0,
+      "currency": "string"
+    },
+    "holdbackCost": {
+      "value": 0,
+      "currency": "string"
+    },
+    "packCost": {
+      "value": 0,
+      "currency": "string"
+    },
+    "flooringCost": {
+      "value": 0,
+      "currency": "string"
+    },
+    "auctionCost": {
+      "value": 0,
+      "currency": "string"
+    },
+    "reconditioningCost": {
+      "value": 0,
+      "currency": "string"
+    },
+    "certificationCost": {
+      "value": 0,
+      "currency": "string"
+    },
+    "transportationCost": {
+      "value": 0,
+      "currency": "string"
+    },
+    "otherCost": {
+      "value": 0,
+      "currency": "string"
+    },
+    "lendingFee": {
+      "value": 0,
+      "currency": "string"
+    },
+    "destinationCharge": {
+      "value": 0,
+      "currency": "string"
+    },
+    "salesPrice": {
+      "value": 0,
+      "currency": "string"
+    },
+    "custom": {},
+    "lockedFields": [
+      {
+        "path": "string",
+        "value": "Unlocked"
+      }
+    ]
+  },
+  "sellerComments": {
+    "text": "string",
+    "html": "string",
+    "content": "string",
+    "lockedFields": [
+      {
+        "path": "string",
+        "value": "Unlocked"  
+},
+  "costsAndFees": {
+    "id": "string",
+    "href": "string",
+    "version": 0,
+    "auctionCost": {
+      "value": 0,
+      "currency": "string"
+    },
+    "certificationCost": {
+      "value": 0,
+      "currency": "string"
+    },
+    "destination": {
+      "value": 0,
+      "currency": "string"
+    },
+    "flooringCost": {
+      "value": 0,
+      "currency": "string"
+    },
+    "holdbackCost": {
+      "value": 0,
+      "currency": "string"
+    },
+    "lendingFee": {
+      "value": 0,
+      "currency": "string"
+    },
+    "originalCost": {
+      "value": 0,
+      "currency": "string"
+    },
+    "otherCost": {
+      "value": 0,
+      "currency": "string"
+    },
+    "packCost": {
+      "value": 0,
+      "currency": "string"
+    },
+    "reconditioningCost": {
+      "value": 0,
+      "currency": "string"
+    },
+    "totalCost": {
+      "value": 0,
+      "currency": "string"
+    },
+    "transportationCost": {
+      "value": 0,
+      "currency": "string"
+    }
+  },
+  "vehicleEquipment": {
+    "id": "string",
+    "href": "string",
+    "version": 0,
+    "equipment": [
+      {
+        "alternateOptionCode": "string",
+        "availability": "string",
+        "equipmentId": "string",
+        "extendedDescription": "string",
+        "oemOptionCode": "string",
+        "pricing": {
+          "invoice": {
+            "value": 0,
+            "currency": "string"
+          },
+          "msrp": {
+            "value": 0,
+            "currency": "string"
+          }
+        },
+        "secondaryOptionCode": "string",
+        "tags": [
+          "string"
+        ]
+      }
+    ]
+  },
+  "protected": true,
+  "shouldPreventIngestDelete": true,
+  "inventoryViewTags": [
+    "string"
+  ]
+}
+
+
